@@ -219,7 +219,7 @@ int measure_I(int pin) {
     }
   }
   if (v_max == 0) {
-    v_max = 65536;
+    v_max = 65535;
   }
   return v_max;
 }
@@ -243,7 +243,7 @@ int measure_H(int dv) {
   if (!isnan(v)) {
     return (int)v;
   }
-  return 65536;
+  return 65535;
 }
 
 int measure_T(int dv) {
@@ -264,7 +264,7 @@ int measure_T(int dv) {
   if (!isnan(v)) {
     return (int)v;
   }
-  return 65536;
+  return 65535;
 }
 
 int s_to_i(String s){
